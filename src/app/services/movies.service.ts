@@ -19,9 +19,7 @@ export class MoviesService {
 
     for (let movie of movies) {
       const movieName = movie.name.toLowerCase();
-      if (movieName.indexOf(filter.toLowerCase()) > -1) {
-        result.push(movie);
-      }
+      if (movieName.indexOf(filter.toLowerCase()) > -1) result.push(movie);
     }
 
     return result;

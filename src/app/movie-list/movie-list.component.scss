@@ -1,9 +1,9 @@
 .list-group-item {
-    cursor: pointer;
+	cursor: pointer;
 
-    &:hover,
-    &:active {
-        background-color: #222222;
-        color: #FFFFFF;
-    }
+	&:hover,
+	&:active {
+		background-color: #222222;
+		color: #FFFFFF;
+	}
 }

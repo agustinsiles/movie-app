@@ -1,27 +1,28 @@
 <div
-     *ngIf="movie; else noMovie"
-    class="thumbnail">
-    <img class="img-responsive" [src]="cover"  alt="">
-    <div class="caption-full">
-        <h4 class="pull-right">$24.99</h4>
-        <h4>{{ movie.name }}</h4>
-        <p>{{ movie.description }}</p>
-        <ul class="genres">
-            <li *ngFor="let genre of movie.genres">{{ genre }}</li>
-        </ul>
-        <p>Duration: <i>{{ movie.length}}</i></p>
-    </div>
-    <div class="ratings">
-        <p>
-            <span class="glyphicon glyphicon-star" *ngFor="let x of rate"></span>
-            <span class="glyphicon glyphicon-star-empty"  *ngFor="let x of rateDifference"></span>
-            Rate: {{ movie.rate }}
-        </p>
-    </div>
+	*ngIf="movie; else noMovie"
+	class="thumbnail">
+	<img 
+		class="img-responsive"
+		[src]="cover"
+		alt="Movie cover">
+	<div class="caption-full">
+		<h4 class="pull-right">$24.99</h4>
+		<h4>{{ movie.name }}</h4>
+		<p>{{ movie.description }}</p>
+		<ul class="genres">
+			<li *ngFor="let genre of movie.genres">{{ genre }}</li>
+		</ul>
+		<p>Duration: <i>{{ movie.length}}</i></p>
+	</div>
+	<div class="ratings">
+		<p>
+			<span class="glyphicon glyphicon-star" *ngFor="let x of rate"></span>
+			<span class="glyphicon glyphicon-star-empty"  *ngFor="let x of rateDifference"></span>
+			Rate: {{ movie.rate }}
+		</p>
+	</div>
 </div>
 
-
-
 <ng-template #noMovie>
-    <p>Please select a movie.</p>
+	<p>Please select a movie.</p>
 </ng-template>
