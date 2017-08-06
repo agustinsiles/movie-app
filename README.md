@@ -1,6 +1,10 @@
-# BetssonGroup
+# BetssonGroup Movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+
+Movie application where a list of movies is taken from a mock file and listed on the main page. User has the option to filter or look for specific movies by filtering on a search input, which will filter all available movies with that string on its name. It can easily be modified so this search can be intended to match the description, the key or whatever movie attribute is desired.
+
+Also, since the filters and ids are stored on the URL, the user can easily go back and forth on the browser and the state of the previous and following pages will remain, making it easier for the user to use the app.
 
 ## Development server
 

@@ -1,0 +1,9 @@
+<div
+  *ngFor="let movie of movies;"
+  [routerLink]="['/movie-details', movie.id]"
+	class="list-group-item">
+	<h4 class="sid-movie-item-id list-group-item-heading">{{ movie.name }}</h4>
+	<p class="sid-movie-item-description list-group-item-text">{{ movie.description }}</p>
+</div>
+
+<div *ngIf="!movies.length">There are no movies to show!</div>
